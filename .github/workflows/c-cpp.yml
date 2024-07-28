@@ -16,6 +16,9 @@ jobs:
       - name: Install cppunit
         run: sudo apt-get install -y libcppunit-dev
 
+      - name: Make configure script executable
+        run: chmod +x ./configure
+
       - name: Configure
         run: ./configure
 
